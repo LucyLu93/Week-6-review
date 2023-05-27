@@ -1,9 +1,9 @@
 const Shape = require('./Shape');
 
 
-class Rectangle {
+class Rectangle extends Shape { //added extends
     constructor(id, width, height) {
-        super(id, width, height);
+        super(id, width, height); 
     }
 
     getArea() {

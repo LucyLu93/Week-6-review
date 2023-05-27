@@ -1,6 +1,9 @@
+const Shape = require('./Shape'); //added this in
 
-class Group {
-    constructor() {
+
+class Group extends Shape { //added extends
+    constructor(id, width, height, radius) {
+        super(id, width, height, radius * 2);
         this.shapes = [];
     }
 

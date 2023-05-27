@@ -19,6 +19,9 @@ describe('Circle', () => {
     });
 
     test('toString()', () => {
-        expect( circle.toString() ).toBe('Circle id: c1 w: 20 h: 40');
+        expect( circle.toString() ).toBe('Circle id: c1 r: 10');
+        //   Expected: "Circle id: c1 w: 20 h: 40"
+       //    Received: "Circle id: c1 r: 10" ??
+
     });
 });

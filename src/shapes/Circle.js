@@ -4,7 +4,7 @@ const Shape = require('./Shape');
 const PI = 3.14;
 
 
-class Circle extends Shape {
+class Circle extends Shape { //added extends 
     constructor(id, radius) {
         super(id, radius * 2, radius * 2);
         this.radius = radius;
