@@ -13,7 +13,7 @@ class Circle extends Shape {
     getArea() {
         // The area of a circle is PI times the radius squared,
         // or in JavaScript: PI * (radius ** 2)
-        // FIX ME
+       return PI * (this.radius ** 2);
     }
 
     toString() {

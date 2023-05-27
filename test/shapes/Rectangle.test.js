@@ -15,7 +15,7 @@ describe('Rectangle', () => {
     });
 
     test('getArea()', () => {
-        // FIX ME
+        expect( rect.getArea() ).toBe(this.width * this.height);
     });
 
     test('toString()', () => {

@@ -19,16 +19,20 @@ const countries = [
 ];
 
 
-
+ 
 /***
  * #1
  * Return the sum of the populations of the first 'count' countries in the array above.
  ***/
+// 1- Firstly, get the first count - the sub-array
+// 2- Secondly, add the populations of those countries.
 
 function sumSomePops(count) {
-    return 0;  // FIX ME
-}
+   let selectedCountries = countries.slice(0, count); //1
+   let sum = selectedCountries.reduce((acc, country) => acc + country.population, 0); //
 
+   return sum;
+}
 
 
 /***
@@ -38,9 +42,15 @@ function sumSomePops(count) {
  * "Brazil has a population of 216 million"
  ***/
 
+// Firstly, use filter to get only the countries wihth >= 100m people
+// Secondly, use map to convert country to strings.
 function bigCountries() {
-    return [];  // FIX ME
+    let largeCountries = countries.filter(c => c.population >= 100);
+    let strings = largeCountries.map(c => `${c.name} has a population of ${c.population} million.`);
+    return strings;  
 }
+
+// the array return the 4 countries twice instead of once so it failed.
 
 
 
@@ -51,8 +61,15 @@ function bigCountries() {
  * Hint: Do a web search for: javascript sort
  ***/
 
+// The sort() method sorts and returns the elements of an array in ascendinf order
+// converted into strings
+
 function bigCountriesSorted() {
-    return [];  // FIX ME
+    let largeCountries = countries.filter(c => c.population >= 100);
+    largeCountries.sort((a, b) => b.population - a.population);
+    let strings = largeCountries.map(c => `${c.name} has a population of ${c.population} million`);
+
+    return strings;
 }
 
 

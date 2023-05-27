@@ -12,7 +12,7 @@ class Shape {
     }
 
     toString() {
-        // FIX ME
+        return `Shape id: ${this.id} w: ${this.width} h: ${this.height}`;
     }
 }
 

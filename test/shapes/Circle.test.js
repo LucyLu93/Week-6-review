@@ -11,7 +11,7 @@ describe('Circle', () => {
     });
 
     test('is a child class of Shape', () => {
-        // FIX ME (look at similar Rectangle test)
+        expect(circle instanceof Shape).toBeTruthy();
     });
 
     test('getArea()', () => {
@@ -19,6 +19,6 @@ describe('Circle', () => {
     });
 
     test('toString()', () => {
-        // FIX ME
+        expect( circle.toString() ).toBe('Circle id: c1 w: 20 h: 40');
     });
 });

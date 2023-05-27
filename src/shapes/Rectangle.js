@@ -7,11 +7,11 @@ class Rectangle {
     }
 
     getArea() {
-        // FIX ME
+        return this.width * this.height;
     }
 
     toString() {
-        // FIX ME
+        return `Rectangle id: ${this.id} w: ${this.width} h: ${this.height}`;
     }
 }
 
